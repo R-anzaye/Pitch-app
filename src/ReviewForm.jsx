@@ -14,7 +14,7 @@ function ReviewForm() {
   const [selectedStadiumImage, setSelectedStadiumImage] = useState('');
 
   useEffect(() => {
-    fetch('http://localhost:5173/db.json')
+    fetch('http://localhost:3000/stadiums')
       .then(response => response.json())
       .then(data => {
         setStadiums(data.stadiums);
@@ -38,7 +38,7 @@ function ReviewForm() {
     };
 
     try {
-      const response = await fetch(`http://localhost:5173/${stadiums.comments}`, {
+      const response = await fetch(`/http://localhost:3000/${stadiums.comments}`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
