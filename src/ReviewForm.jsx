@@ -58,7 +58,7 @@ function ReviewForm() {
     setStadiums(updatedStadiums);
 
     // Assuming you have an endpoint to update stadiums with comments
-    fetch(`http://localhost:3000/stadiums/${stadiumId}`, {
+    fetch(`https://pitch-app.onrender.com/backend/db.json/stadiums/${stadiumId}`, {
       method: "PUT",
       headers: {
         "Content-Type": "application/json",
