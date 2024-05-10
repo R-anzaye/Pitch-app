@@ -8,8 +8,8 @@
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
-    "start": "node server.js",
-    "server": "json-server --watch db.json -p $PORT"
+    "start": "node server.js"
+   
   },
   "dependencies": {
     "json": "^11.0.0",
