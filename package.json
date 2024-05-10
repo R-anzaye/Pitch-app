@@ -2,13 +2,14 @@
   "name": "pitch-app",
   "private": true,
   "version": "0.0.0",
-  "type": "module", 
+  "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
-    "start": "node server.js" 
+    "start": "node server.js",
+    "server": "json-server --watch db.json -p $PORT"
   },
   "dependencies": {
     "json-server": "^1.0.0-alpha.23",
