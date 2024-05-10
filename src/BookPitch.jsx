@@ -72,7 +72,7 @@ function BookPitch() {
       </div>
       <div className="container">
         {filteredStadiums.map((stadium) => (
-          <div key={stadium.name} className="stadium-card">
+          <div key={stadium.id} className="stadium-card">
             <div className="image-container">
               <img src={stadium.image} alt="Stadium" />
             </div>
@@ -87,7 +87,7 @@ function BookPitch() {
             </div>
           </div>
         ))}
-    
+      </div>
       <footer>
         <p>Pitch</p>
         <p>
@@ -111,7 +111,6 @@ function BookPitch() {
       </footer>
       {/* Toast Container */}
       <ToastContainer />
-    </div>
     </div>
   );
 }
